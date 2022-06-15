@@ -346,8 +346,8 @@ footer {
 
 form {
     background-color: #7e7f83;
-    height: 400px;
-    width: 750px;
+    /* height: 400px;
+    width: 750px; */
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
     padding: 10px;
@@ -430,13 +430,13 @@ form {
         align-items: center;
         flex-wrap: wrap;
     }
-    form {
+    /* form {
         height: 500px;
-        width: 300px;
-        display: flex;
+        width: 300px; */
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+    } */
 }
 
 @media screen and (max-width: 768px) {
@@ -508,13 +508,13 @@ form {
         align-items: center;
         flex-wrap: wrap;
     }
-    form {
+    /* form {
         height: 450px;
         width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+    } */
 }
 
 @media screen and (max-width: 992px) {
