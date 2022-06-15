@@ -269,14 +269,15 @@ footer {
     background-color: #d9c5b2;
     margin: 0;
     width: 100%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     column-gap: 10px;
     row-gap: 10px;
     justify-items: center;
-    align-items: center;
+    align-items: center; */
     padding: 10px;
+    height: auto;
 }
 
 .productos {
@@ -486,11 +487,15 @@ form {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
+        row-gap: 10px;
+        height: auto;
     }
     #background__productos {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
+        row-gap: 10px;
+        height: auto;
     }
     #background__contacto {
         background-color: #d9c5b2;
@@ -528,6 +533,13 @@ form {
         height: auto;
     }
     #background__trabajos {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        row-gap: 10px;
+        height: auto;
+    }
+    #background__productos {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
