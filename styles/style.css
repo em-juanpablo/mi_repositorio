@@ -355,6 +355,7 @@ form {
     flex-direction: column;
     justify-content: center;
     color: #34312d;
+    height: calc(100vh - 250px);
 }
 
 .form__boton {
