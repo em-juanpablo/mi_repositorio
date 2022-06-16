@@ -328,12 +328,14 @@ footer {
     background-color: #d9c5b2;
     margin: 0;
     width: 100%;
-    height: calc(100vh - 75px);
+    /* height: calc(100vh - 75px); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: auto;
+    padding: 1rem;
 }
 
 .form__title {
@@ -355,7 +357,8 @@ form {
     flex-direction: column;
     justify-content: center;
     color: #34312d;
-    height: calc(100vh - 250px);
+    /* height: calc(100vh - 250px); */
+    height: auto;
 }
 
 .form__boton {
@@ -424,12 +427,14 @@ form {
         background-color: #d9c5b2;
         margin: 0;
         width: 100%;
-        height: calc(100vh - 75px);
+        /* height: calc(100vh - 75px); */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        height: auto;
+        padding: 1rem;
     }
     /* form {
         height: 500px;
@@ -502,12 +507,14 @@ form {
         background-color: #d9c5b2;
         margin: 0;
         width: 100%;
-        height: calc(100vh - 75px);
+        /* height: calc(100vh - 75px); */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        height: auto;
+        padding: 1rem;
     }
     /* form {
         height: 450px;
@@ -546,5 +553,14 @@ form {
         grid-template-rows: auto auto;
         row-gap: 10px;
         height: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #background__contacto {
+        height: calc(100vh - 75px);
+    }
+    form {
+        height: calc(100vh - 250px);
     }
 }
