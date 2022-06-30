@@ -64,7 +64,7 @@ ul li a {
   text-decoration: none;
 }
 
-.background {
+.background, .equipo {
   background-color: #d9c5b2;
   width: 100%;
   height: calc(100vh - 75px);
@@ -197,10 +197,6 @@ footer {
 }
 
 .equipo {
-  background-color: #d9c5b2;
-  margin: 0;
-  width: 100%;
-  height: calc(100vh - 275px);
   padding-top: 10px;
 }
 
@@ -233,6 +229,8 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  font-style: italic;
+  color: #34312d;
 }
 
 .equipo__miembro:hover {
@@ -240,7 +238,7 @@ footer {
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-#background__trabajos {
+#background__trabajos, #background__productos {
   background-color: #d9c5b2;
   margin: 0;
   width: 100%;
@@ -277,7 +275,7 @@ footer {
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.trabajos__imagen {
+.trabajos__imagen, .productos__imagen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,20 +284,17 @@ footer {
   width: 100%;
 }
 
-.trabajos__titulo {
+.trabajos__titulo, .productos__titulo {
   margin: 10px;
 }
 
-.trabajos__abstract {
+.trabajos__abstract, .productos__descripcion {
   margin: 10px;
 }
 
 #background__productos {
-  background-color: #d9c5b2;
-  margin: 0;
-  width: 100%;
-  padding: 10px;
   height: auto;
+  padding: 10px;
 }
 
 .productos {
@@ -331,21 +326,9 @@ footer {
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.productos__imagen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-}
-
 .productos__titulo {
-  margin: 10px;
-}
-
-.productos__descripcion {
-  margin: 10px;
+  font-style: italic;
+  color: #34312d;
 }
 
 .productos__precio {
@@ -436,7 +419,7 @@ form {
             align-items: flex-end;
     font-size: small;
   }
-  .background {
+  .background, .equipo {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto;
@@ -470,7 +453,7 @@ form {
     height: auto;
     padding-top: 10px;
   }
-  #background__trabajos {
+  #background__trabajos, #background__productos {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto;
@@ -527,7 +510,7 @@ form {
             align-items: flex-end;
     font-size: small;
   }
-  .background {
+  .background, .equipo {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
@@ -561,7 +544,7 @@ form {
     height: auto;
     padding-top: 10px;
   }
-  #background__trabajos {
+  #background__trabajos, #background__productos {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto;
@@ -606,7 +589,7 @@ form {
 }
 
 @media screen and (max-width: 992px) {
-  .background {
+  .background, .equipo {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
@@ -626,7 +609,7 @@ form {
     row-gap: 10px;
     height: auto;
   }
-  #background__trabajos {
+  #background__trabajos, #background__productos {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;

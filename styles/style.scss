@@ -6,6 +6,13 @@
 
 @import "colores";
 
+@mixin tituloCard ($color, $style) {
+    font-style: $style;
+    color: $color;
+}
+
+$coloresTitulos: (encabezado:$typeHeader, card:$typeCard, pie:$typeFooter);
+
 header {
     background-color: $backgroundHeader;
 }
@@ -165,10 +172,7 @@ footer {
 }
 
 .equipo {
-    background-color: $background;
-    margin: 0;
-    width: 100%;
-    height: calc(100vh - 275px);
+    @extend .background;
     padding-top: 10px;
 }
 
@@ -193,6 +197,7 @@ footer {
     &:hover {
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     }
+    @include tituloCard(map-get($coloresTitulos, card), italic);
 }
 
 #background__trabajos {
@@ -234,11 +239,9 @@ footer {
 }
 
 #background__productos {
-    background-color: $background;
-    margin: 0;
-    width: 100%;
-    padding: 10px;
+    @extend #background__trabajos;
     height: auto;
+    padding: 10px;
 }
 
 .productos {
@@ -258,17 +261,16 @@ footer {
 }
 
 .productos__imagen {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    @extend .trabajos__imagen;
 }
 
 .productos__titulo {
-    margin: 10px;
+    @extend .trabajos__titulo;
+    @include tituloCard($typeCard, italic);
 }
 
 .productos__descripcion {
-    margin: 10px;
+    @extend .trabajos__abstract;
 }
 
 .productos__precio {
