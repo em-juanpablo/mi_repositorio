@@ -65,7 +65,7 @@ ul {
 .background {
     background-color: $background;
     width: 100%;
-    height: calc(100vh - 75px);
+    height: auto;
     padding: 0.5rem;
 }
 
@@ -78,7 +78,6 @@ ul {
     background-color: $backgroundCard;
     overflow: auto;
     border-radius: 10px;
-    height: calc(100vh - 75px - 2rem);
     margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +122,7 @@ ul {
 .micro__redes {
     height: 25px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -131,36 +131,33 @@ footer {
 
 .inferior {
     height: 75px;
-    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     column-gap: 10px;
     align-items: center;
-    margin-right: 25px;
 }
 
 .inferior__logo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 25px;
     height: 30px;
 }
 
 .inferior__texto {
     color: $typeFooter;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
 }
 
 .inferior__email {
     color: $typeFooter;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    margin: 25px;
 }
 
 .redes {
     width: 30px;
+    margin: 0px 5px 0px 5px;
 }
 
 .historia {
@@ -199,7 +196,17 @@ footer {
     }
     @include tituloCard(map-get($coloresTitulos, card), italic);
 }
-
+.equipo__miembro__nombre {
+    margin: 10px;
+}
+.equipo__miembro__id {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.equipo__miembro__intro {
+    margin: 10px;
+}
 #background__trabajos {
     background-color: $background;
     margin: 0;
@@ -349,8 +356,8 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: flex-end;
-        height: 200px;
+        align-items: center;
+        height: 150px;
         font-size: small;
     }
     .equipo {
@@ -403,8 +410,8 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: flex-end;
-        height: 200px;
+        align-items: center;
+        height: 150px;
         font-size: small;
     }
     .equipo {
@@ -446,6 +453,13 @@ form {
         grid-template-rows: auto auto;
         row-gap: 10px;
         height: auto;
+    }
+    .inferior {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 150px;
     }
     .equipo {
         display: grid;
