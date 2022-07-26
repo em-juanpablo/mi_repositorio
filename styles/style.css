@@ -10,7 +10,7 @@ header {
 }
 
 .principal {
-  height: 75px;
+  height: 100px;
   position: relative;
 }
 
@@ -42,7 +42,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 75px;
+  height: 100px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -69,10 +69,6 @@ ul li a {
   width: 100%;
   height: auto;
   padding: 0.5rem;
-}
-
-.mainmedia {
-  display: none;
 }
 
 .micro {
@@ -144,7 +140,7 @@ footer {
 }
 
 .inferior {
-  height: 75px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,6 +186,7 @@ footer {
   color: #34312d;
   height: 200px;
   padding: 10px;
+  text-align: center;
 }
 
 .equipo {
@@ -198,6 +195,7 @@ footer {
 
 #equipo__titulo {
   margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #34312d;
@@ -255,8 +253,8 @@ footer {
   background-color: #d9c5b2;
   margin: 0;
   width: 100%;
-  padding-top: 10px;
-  height: calc(100vh - 75px);
+  padding: 10px;
+  height: auto;
 }
 
 .trabajos {
@@ -348,17 +346,25 @@ footer {
   margin: 10px;
 }
 
+.productos__precio__consulta {
+  color: #34312d;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+}
+
 .productos__boton {
   margin: 10px;
   background-color: #34312d;
   color: #d9c5b2;
-  height: 20px;
-  border-radius: 5px;
+  height: 40px;
+  border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #background__contacto {
-  background-color: #d9c5b2;
+  background-image: url("../assets/images/bg/bg-form.png");
+  background-size: auto;
   margin: 0;
   width: 100%;
   display: -webkit-box;
@@ -377,7 +383,6 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
-  padding: 1rem;
 }
 
 .form__title {
@@ -389,7 +394,7 @@ footer {
 }
 
 form {
-  background-color: #7e7f83;
+  background-color: rgba(126, 127, 131, 0.5);
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
   padding: 10px;
@@ -410,8 +415,8 @@ form {
 .form__boton {
   background-color: #34312d;
   color: #d9c5b2;
-  height: 20px;
-  border-radius: 5px;
+  height: 40px;
+  border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -461,6 +466,14 @@ form {
             align-items: center;
     height: 150px;
     font-size: small;
+  }
+  .historia {
+    background-color: #7e7f83;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #34312d;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
   }
   .equipo {
     height: auto;
@@ -552,6 +565,14 @@ form {
             align-items: center;
     height: 150px;
     font-size: small;
+  }
+  .historia {
+    background-color: #7e7f83;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #34312d;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
   }
   .equipo {
     height: auto;
